@@ -11,11 +11,11 @@ import Success from "../success/success";
 
 function App() {
   return (
-    <BrowserRouter basename="https://luxeshop-kg.ru/">
+    <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Main}/>
         <Route exact path="/basket" component={Basket}/>
-        <Route exact path="https://luxeshop-kg.ru/about" component={About}/>
+        <Route exact path="/about" component={About}/>
         <Route exact path="/home" component={Home}/>
         <Route exact path="/success" component={Success}/>
         <Route exact path="/product" component={Product}/>

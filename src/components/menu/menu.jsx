@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Logo from "../logo/logo";
 import NavigationBar from "../navigation-bar/navigation-bar";
@@ -8,24 +8,24 @@ function Menu() {
   return (
     <nav className="menu">
       <div className="menu__container">
-        <Link to="/" aria-label="На главную">
+        <Link to="/home" aria-label="На главную">
           <Logo />
         </Link>
         <ul className="menu__list">
           <li className="menu__item">
-            <a className="menu__link" href="/">
+            <Link to="/" className="menu__link">
               Каталог
-            </a>
+            </Link>
           </li>
           <li className="menu__item">
-            <a className="menu__link" href="/contacts">
+            <Link to="/contacts" className="menu__link">
               Где купить?
-            </a>
+            </Link>
           </li>
           <li className="menu__item">
-            <a className="menu__link" href="https://luxeshop-kg.ru/about">
+            <Link to="/about" className="menu__link">
               О компании
-            </a>
+            </Link>
           </li>
         </ul>
         <NavigationBar />
